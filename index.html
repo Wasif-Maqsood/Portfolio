@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Wasif Portfolio">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=0">
+    <meta name="keywords" content="">
+    <title>Portfolio</title>
+    <!-- Begin Inspectlet Asynchronous Code-->
+    <!-- End Inspectlet Asynchronous Code-->
+    <link href="css/app.css" rel="stylesheet">
+</head>
+<body class="index-page">
+    <script>
+        // Triggering a resize event after the page loads to initialize animations
+        window.onload = function() {
+            var event = new Event('resize');
+            window.dispatchEvent(event);
+        };
+    </script>
+    <section class="flex height">
+        <div class="canvas" id="pt"><canvas id="canvas" width="1226" height="901" style="width: 981px; height: 721px;"></canvas></div>
+        <div class="flex">
+        <div class="text">Hello, I'm <span>Wasif Maqsood<br></span>I'm a full-stack web developer.</div><a class="btn" id="btn"><span></span><span></span><span></span><span></span>View my work</a>
+        </div>
+    </section>
+    <section class="flex projects" id="portfolio">
+        <div class="title">PROJECTS</div>
+        <div class="container">
+        <div class="filter-wrap">
+            <div class="flex-row">
+            <button class="filter mixitup-control-active" type="button" data-filter="all">ALL</button>
+            <button class="filter" type="button" data-filter=".react">REACT</button>
+            <button class="filter" type="button" data-filter=".html">HTML</button>
+            <button class="filter" type="button" data-filter=".js">JAVASCRIPT</button>
+            </div>
+            <div class="float-bar" id="floatBar" style="left: 25px;
+        width: 110px;">
+            <div class="flex-row row" id="floatBar-row" style="left: -25px;">
+                <button class="filter mixitup-control-active" type="button" data-filter="all">ALL</button>
+                <button class="filter" type="button" data-filter=".react">REACT</button>
+                <button class="filter" type="button" data-filter=".html">HTML</button>
+                <button class="filter" type="button" data-filter=".js">JAVASCRIPT</button>
+            </div>
+            </div>
+        </div>
+        <div class="gallery" id="gallery"><div class="mix html" data-order="1">
+    <div class="card"><img src="assets/img/medicare.jpg" alt=""></div>
+    <div class="card-name">
+        <div class="card-name__title">Medicare</div>
+        <div class="card-name__subtitle">HTML</div>
+    </div>
+    <a href="https://sydort.github.io/medicare/" class="button" target="_blank">VIEW SITE</a>
+</div><div class="mix html js" data-order="1">
+    <div class="card"><img src="assets/img/medical-clinic.jpg" alt=""></div>
+    <div class="card-name">
+        <div class="card-name__title">Medical-clinic</div>
+        <div class="card-name__subtitle">HTML / JS / Swiper.js</div>
+    </div>
+    <a href="https://a-medical-clinic.netlify.app/" class="button" target="_blank">VIEW SITE</a>
+</div><div class="mix react js" data-order="1">
+    <div class="card"><img src="assets/img/crowd-marketing.jpg" alt=""></div>
+    <div class="card-name">
+        <div class="card-name__title">Crowd Marketing</div>
+        <div class="card-name__subtitle">REACT / JS</div>
+    </div>
+    <a href="https://backend.crowd-marketing.xyz/" class="button" target="_blank">VIEW SITE</a>
+</div><div class="mix html js" data-order="1">
+    <div class="card"><img src="assets/img/ico.jpg" alt=""></div>
+    <div class="card-name">
+        <div class="card-name__title">ICO</div>
+        <div class="card-name__subtitle">HTML / JS / Chart.js</div>
+    </div>
+    <a href="https://sydort.github.io/ico/" class="button" target="_blank">VIEW SITE</a>
+</div><div class="mix html" data-order="1">
+    <div class="card"><img src="assets/img/realestate.jpg" alt=""></div>
+    <div class="card-name">
+        <div class="card-name__title">Realestate</div>
+        <div class="card-name__subtitle">HTML</div>
+    </div>
+    <a href="https://sydort.github.io/realestate/" class="button" target="_blank">VIEW SITE</a>
+</div><div class="mix html" data-order="1">
+    <div class="card"><img src="assets/img/calcap.jpg" alt=""></div>
+    <div class="card-name">
+        <div class="card-name__title">Calcap</div>
+        <div class="card-name__subtitle">HTML</div>
+    </div>
+    <a href="https://sydort.github.io/calcap/" class="button" target="_blank">VIEW SITE</a>
+</div><div class="mix html" data-order="1">
+    <div class="card"><img src="assets/img/aps.jpg" alt=""></div>
+    <div class="card-name">
+        <div class="card-name__title">Aps</div>
+        <div class="card-name__subtitle">HTML</div>
+    </div>
+    <a href="https://sydort.github.io/aps/" class="button" target="_blank">VIEW SITE</a>
+</div><div class="mix html" data-order="1">
+    <div class="card"><img src="assets/img/tradealike.jpg" alt=""></div>
+    <div class="card-name">
+        <div class="card-name__title">Tradealike</div>
+        <div class="card-name__subtitle">HTML</div>
+    </div>
+    <a href="https://sydort.github.io/tradealike/" class="button" target="_blank">VIEW SITE</a>
+</div><div class="mix html js" data-order="1">
+    <div class="card"><img src="assets/img/coindogs.jpg" alt=""></div>
+    <div class="card-name">
+        <div class="card-name__title">Coindogs</div>
+        <div class="card-name__subtitle">HTML / JS</div>
+    </div>
+    <a href="https://coindogs.co/" class="button" target="_blank">VIEW SITE</a>
+</div><div class="mix html" data-order="1">
+    <div class="card"><img src="assets/img/provideit.jpg" alt=""></div>
+    <div class="card-name">
+        <div class="card-name__title">Provide It</div>
+        <div class="card-name__subtitle">HTML</div>
+    </div>
+    <a href="https://sydort.github.io/provideit/" class="button" target="_blank">VIEW SITE</a>
+</div><div class="mix html" data-order="1">
+    <div class="card"><img src="assets/img/hummingbird.jpg" alt=""></div>
+    <div class="card-name">
+        <div class="card-name__title">Hummingbird</div>
+        <div class="card-name__subtitle">HTML</div>
+    </div>
+    <a href="https://sydort.github.io/hummingbird/" class="button" target="_blank">VIEW SITE</a>
+</div><div class="mix html" data-order="1">
+    <div class="card"><img src="assets/img/manageaddiction.jpg" alt=""></div>
+    <div class="card-name">
+        <div class="card-name__title">Manage Addiction</div>
+        <div class="card-name__subtitle">HTML</div>
+    </div>
+    <a href="https://sydort.github.io/manageaddiction/" class="button" target="_blank">VIEW SITE</a>
+</div><div class="mix html" data-order="1">
+    <div class="card"><img src="assets/img/scotti.jpg" alt=""></div>
+    <div class="card-name">
+        <div class="card-name__title">Scotti</div>
+        <div class="card-name__subtitle">HTML</div>
+    </div>
+    <a href="https://sydort.github.io/scotti/" class="button" target="_blank">VIEW SITE</a>
+</div><div class="mix html" data-order="1">
+    <div class="card"><img src="assets/img/solar.jpg" alt=""></div>
+    <div class="card-name">
+        <div class="card-name__title">Solar</div>
+        <div class="card-name__subtitle">HTML</div>
+    </div>
+    <a href="https://sydort.github.io/solar/" class="button" target="_blank">VIEW SITE</a>
+</div><div class="mix html" data-order="1">
+    <div class="card"><img src="assets/img/flagship.jpg" alt=""></div>
+    <div class="card-name">
+        <div class="card-name__title">Flagship</div>
+        <div class="card-name__subtitle">HTML</div>
+    </div>
+    <a href="https://sydort.github.io/flagship/" class="button" target="_blank">VIEW SITE</a>
+</div><div class="mix html" data-order="1">
+    <div class="card"><img src="assets/img/virtual-addiction.jpg" alt=""></div>
+    <div class="card-name">
+        <div class="card-name__title">Virtual Addiction</div>
+        <div class="card-name__subtitle">HTML</div>
+    </div>
+    <a href="https://sydort.github.io/virtual-addiction/" class="button" target="_blank">VIEW SITE</a>
+</div></div>
+        </div>
+    </section>
+    <script type="text/javascript" src="js/vendors.js"></script><script type="text/javascript" src="js/app.js"></script>
+</body>
