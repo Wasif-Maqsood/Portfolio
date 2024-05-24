@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -28,6 +29,7 @@ const ExperienceCard = ({ experience }) => {
             src={experience.icon}
             alt={experience.company_name}
             className='w-[60%] h-[60%] object-contain'
+            loading='lazy'
           />
         </div>
       }
@@ -59,6 +61,20 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
   return (
     <>
+      <Helmet>
+        <title>Work Experience - Wasif Maqsood</title>
+        <meta
+          name="description"
+          content="Explore the professional journey and work experience of Wasif Maqsood. Learn about the companies, roles, and key accomplishments throughout the career."
+        />
+        <meta name="keywords" content="wasif, work experience, professional journey, career, Wasif Maqsood, web development, web developer, mobile app development, mobile app developer, React, React development, React developer, React Native, React Native development, React Native developer, JavaScript, Node.js, Node.js development, Node.js developer, Frontend development, Backend development, Full-stack development, Software development, UI/UX design, Cross-platform development, Progressive Web Apps (PWAs), Hybrid mobile apps, Responsive web design, API development, Web services, Web applications, Mobile applications, JavaScript frameworks, Frontend frameworks, Backend frameworks, Agile development, Software engineering, Code optimization, Performance tuning, Version control (e.g., Git), Continuous integration/Continuous deployment (CI/CD), DevOps practices, Cloud computing, AWS (Amazon Web Services), Azure, Google Cloud Platform (GCP), Database design, SQL, NoSQL, MongoDB, Firebase, Authentication and authorization, Security best practices, SEO best practices" />
+        <meta property="og:title" content="Work Experience - Wasif Maqsood" />
+        <meta property="og:description" content="Explore the professional journey and work experience of Wasif Maqsood. Learn about the companies, roles, and key accomplishments throughout the career." />
+        <meta property="og:url" content="https://www.wasifmaqsood.com/experience" />
+        <meta property="og:image" content="URL_TO_IMAGE" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
+
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
           What I have done so far
@@ -82,4 +98,4 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, "work");
+export default SectionWrapper(Experience, "experience");
